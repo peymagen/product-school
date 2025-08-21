@@ -1,34 +1,22 @@
 import { IoMdCheckboxOutline } from "react-icons/io";
+import styles from "./Card.module.css";
 
 const Card = ({ title, features, type }) => {
   const isDark = type === "dark";
 
   return (
-    <div
-      className={`w-[397.75px] h-[405px] gap-[25px] rounded-[10px] p-[40px_44px] ${
-        isDark ? "bg-[#264d4b]" : "border border-[#FFE492]"
-      }`}
-    >
-      <p
-        className={`font-inter font-bold text-[36px] leading-[1] tracking-[-0.02em] ${
-          isDark ? "text-[#FFE492]" : "text-black"
-        }`}
-      >
+    <div className={`${styles.card} ${isDark ? styles.darkCard : styles.lightCard}`}>
+      <p className={`${styles.title} ${isDark ? styles.darkTitle : styles.lightTitle}`}>
         {title}
       </p>
-      <div className="mt-[28px]">
+
+      <div className={styles.features}>
         {features.map((feature, i) => (
-          <div key={i} className="flex mt-[19px]">
+          <div key={i} className={styles.featureItem}>
             <IoMdCheckboxOutline
-              className={`w-[18px] h-[18px] mr-2 ${
-                isDark ? "text-[#FFE492]" : "text-black"
-              }`}
+              className={`${styles.icon} ${isDark ? styles.darkIcon : styles.lightIcon}`}
             />
-            <p
-              className={`font-inter font-normal text-[16px] leading-[20px] tracking-[-0.02em] ${
-                isDark ? "text-white" : "text-black"
-              }`}
-            >
+            <p className={`${styles.featureText} ${isDark ? styles.darkText : styles.lightText}`}>
               {feature}
             </p>
           </div>

@@ -1,0 +1,89 @@
+.card {
+  max-width: 29rem; /* ~480px */
+  width: 100%;
+  padding: 3rem 2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Quote Section */
+.quoteSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 0.1rem solid #212529;
+}
+
+.quoteImg {
+  width: 3.7rem;
+  height: auto;
+}
+
+.quoteText {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.8rem;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.name {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 2rem;
+}
+
+.position {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.4rem;
+  opacity: 0.9;
+}
+
+/* 🔹 Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    width: 80%;
+  }
+
+  .profile {
+    gap: 0.9rem;
+  }
+
+  .avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}

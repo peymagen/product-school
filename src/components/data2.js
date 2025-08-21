@@ -12,7 +12,7 @@ export const testimonials = [
     avatar: Avatar,
     name: "Oberon Shaw, MCH",
     position: "Head of Talent Acquisition, North America",
-    bgColor: "bg-white",
+    bgColor: "bg-[#F5F5F5]",
     textColor: "text-black",
   },
   {

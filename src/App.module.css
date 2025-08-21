@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* ensures full viewport height */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* or your desired background */
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}

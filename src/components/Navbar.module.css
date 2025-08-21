@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5.75rem; /* 92px → 92/16 = 5.75rem */
+  padding: 1rem 10%; /* instead of 220px */
+  background-color: #264D4B;
+  position: relative;
+}
+
+/* Logo Section */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 0.75rem; /* space between logo and text */
+}
+
+.logoImage {
+  width: 2.5rem; /* ~40px */
+  height: auto;
+}
+
+.logoText {
+  color: white;
+  font-weight: bold;
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.2;
+  font-family: Inter, sans-serif;
+}
+
+/* Desktop Menu */
+.menu {
+  display: none;
+}
+
+@media (min-width: 1030px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* space between items */
+    color: white;
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.menuItem:hover {
+  color: #d1d5db;
+}
+
+.ctaButton {
+  background-color: #6A9D9A;
+  color: white;
+  padding: 0.75rem 1.5rem; /* responsive padding */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ctaButton:hover {
+  background-color: #4a7c76;
+}
+
+@media (min-width: 768px) {
+  .ctaButton {
+    display: flex;
+  }
+}
+
+/* Mobile Menu Button */
+.mobileButton {
+  display: flex;
+  color: white;
+  padding: 0.5rem;
+}
+
+@media (min-width: 1030px) {
+  .mobileButton {
+    display: none;
+  }
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #2F5C5C;
+  border-top: 1px solid #4a7c76;
+  z-index: 50;
+  display: block;
+}
+
+.mobileMenuList {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobileMenuItem {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.mobileMenuItem:hover {
+  color: #d1d5db;
+}
+
+.mobileCta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #4a7c76;
+}
+
+.mobileCtaButton {
+  width: 100%;
+  background-color: #6A9D9A;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mobileCtaButton:hover {
+  background-color: #4a7c76;
+}

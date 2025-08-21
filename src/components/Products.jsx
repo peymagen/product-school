@@ -1,9 +1,10 @@
 import Card from "./Card";
 import { products } from "../data";
+import styles from "./Products.module.css";
 
 const Products = () => {
   return (
-    <div className="flex flex-wrap gap-[32px] justify-center">
+    <div className={styles.productsContainer}>
       {products.map((item, index) => (
         <Card key={index} {...item} />
       ))}

@@ -1,0 +1,128 @@
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* ~32px */
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Card Styling */
+.card {
+  width: 25rem;   /* ~400px */
+  max-width: 100%;
+  min-height: 25rem; 
+  border-radius: 0.625rem; /* 10px */
+  padding: 2.5rem 2.75rem; /* 40px 44px */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 24px */
+  box-sizing: border-box;
+}
+
+.darkCard {
+  background-color: #264d4b;
+}
+
+.lightCard {
+  border: 0.063rem solid #ffe492; /* 1px */
+}
+
+.title {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.darkTitle {
+  color: #ffe492;
+}
+
+.lightTitle {
+  color: black;
+}
+
+.features {
+  margin-top: 1.75rem; /* 28px */
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem; /* 19px ~ 1.2rem */
+}
+
+.icon {
+  width: 1.125rem; /* 18px */
+  height: 1.125rem;
+  margin-right: 0.5rem; /* 8px */
+}
+
+.darkIcon {
+  color: #ffe492;
+}
+
+.lightIcon {
+  color: black;
+}
+
+.featureText {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25rem; /* 20px */
+  letter-spacing: -0.02em;
+}
+
+.darkText {
+  color: white;
+}
+
+.lightText {
+  color: black;
+}
+
+/* 🔹 Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .card {
+    width: 22rem;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .productsContainer {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .featureText {
+    font-size: 0.9rem;
+  }
+}

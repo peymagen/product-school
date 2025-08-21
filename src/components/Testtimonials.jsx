@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "./card2.jsx";
-import { testimonials } from "./data2.js"; 
+import { testimonials } from "./data2.js";
+import styles from "./Testimonial.module.css";
 
 const App = () => {
   return (
-    <div className="w-[1479px] h-[498px] flex flex-row items-center justify-center gap-[32px] mt-[40px]">
+    <div className={styles.container}>
       {testimonials.map((item, index) => (
         <Card key={index} {...item} />
       ))}
