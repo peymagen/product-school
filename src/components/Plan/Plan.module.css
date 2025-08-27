@@ -1,0 +1,58 @@
+.planSection {
+  width: 100vw;
+  height: auto;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+
+.cardContainer {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Tablet (landscape & portrait) */
+@media (max-width: 1024px) {
+  .planSection {
+    padding: 4rem 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .cardContainer {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile (large phones) */
+@media (max-width: 768px) {
+  .planSection {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+/* Small Mobile (narrow screens like 320px–480px) */
+@media (max-width: 480px) {
+  .planSection {
+    padding-right: 3rem;
+    gap: 1.5rem;
+  }
+
+  .cardContainer {
+    gap: 2rem;
+  }
+}

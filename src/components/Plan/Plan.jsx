@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Plan.module.css";
-import Card from "./Card3";
-import plans from './Data3'
+import Card from "../Card3/Card3";
+import plans from '../Data3'
 
 const Plan = () => {
   return (

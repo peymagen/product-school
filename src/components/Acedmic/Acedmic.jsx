@@ -1,14 +1,11 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import stud_detail from "../assets/stud_detail.png";
+import stud_detail from "../assets/stud_detail.png"
 // import TickIcon from "./TickIcon.jsx"; 
-// import { FaCheck } from "react-icons/fa";
 import App from '../assets/Apps.png'
-import Group from '../assets/Group.png';
-
-import Products from './Products.jsx'
-import Testtimonials from './Testtimonials.jsx';
-import Plan from './Plan.jsx'
+import Products from '../Products/Products.jsx'
+import Testtimonials from '../Testimonial/Testtimonials.jsx';
+import Plan from '../Plan/Plan.jsx'
 import styles from './Acedmic.module.css'
 
 const Acedmic = () => {
@@ -146,18 +143,18 @@ const Acedmic = () => {
             <section className={styles.workSection}>
                 <div className={styles.contentBoxSec6}>
                     <div className={styles.textBoxSec6}>
-                    <h2 className={styles.headingSec6}>Your work, everywhere you are</h2>
-                    <p className={styles.descriptionSec6}>
-                        Access your notes from your computer, phone or tablet by synchronising
-                        with various services, including Whitepace, Dropbox and OneDrive. 
-                        The app is available on Windows, macOS, Linux, Android and iOS. 
-                        A terminal app is also available!
-                    </p>
+                        <h2 className={styles.headingSec6}>Your work, everywhere you are</h2>
+                        <p className={styles.descriptionSec6}>
+                            Access your notes from your computer, phone or tablet by synchronising
+                            with various services, including Whitepace, Dropbox and OneDrive. 
+                            The app is available on Windows, macOS, Linux, Android and iOS. 
+                            A terminal app is also available!
+                        </p>
                     </div>
 
                     <button className={styles.buttonSec6}>
-                    <span className={styles.btnTextSec6}>Try Now</span>
-                    <FaArrowRight className={styles.btnIconSec6} />
+                        <span className={styles.btnTextSec6}>Try Now</span>
+                        <FaArrowRight className={styles.btnIconSec6} />
                     </button>
                 </div>
             </section>
@@ -209,7 +206,7 @@ const Acedmic = () => {
                     What Our Clients{" "}
                     <span className={styles.highlightSec9}>
                     Says
-                    <img src={Group} alt="" className={styles.underlineSec9} />
+                    {/* <img src={Group} alt="" className={styles.underlineSec9} /> */}
                     </span>
                 </h2>
 
@@ -229,50 +226,50 @@ const Acedmic = () => {
 
                 <div className={styles.contactContentSec10}>
                     <div className={styles.leftContentSec10}>
-                    <h2 className={styles.titleSec10}>
-                        Have a Query! <br /> Let’s discuss
-                    </h2>
-                    <p className={styles.subtitleSec10}>
-                        Thank you for getting in touch! Kindly fill the form, have a great day!
-                    </p>
+                        <h2 className={styles.titleSec10}>
+                            Have a Query! <br /> Let’s discuss
+                        </h2>
+                        <p className={styles.subtitleSec10}>
+                            Thank you for getting in touch! <br/> Kindly fill the form, have a great day!
+                        </p>
                     </div>
 
                     {/* Form */}
                     <form className={styles.formSec10}>
-                    <div className={styles.rowSec10}>
-                        <input type="text" placeholder="Your Name" />
-                        <input type="email" placeholder="Your Email" />
-                    </div>
+                        <div className={styles.rowSec10}>
+                            <input type="text" placeholder="Your Name" />
+                            <input type="email" placeholder="Your Email" />
+                        </div>
 
-                    <div className={styles.rowSec10}>
-                        <input type="number" placeholder="Your Phone Number" />
-                        <select>
-                        <option value="">Country</option>
-                        <option value="india">India</option>
-                        <option value="russia">Russia</option>
-                        <option value="uk">UK</option>
-                        <option value="canada">Canada</option>
-                        </select>
-                    </div>
+                        <div className={styles.rowSec10}>
+                            <input type="number" placeholder="Your Phone Number" />
+                            <select>
+                            <option value="">Country</option>
+                            <option value="india">India</option>
+                            <option value="russia">Russia</option>
+                            <option value="uk">UK</option>
+                            <option value="canada">Canada</option>
+                            </select>
+                        </div>
 
-                    <div className={styles.rowSec10}>
-                        <input type="text" placeholder="Describe Query" />
-                        <select>
-                        <option value="">Query Related</option>
-                        <option value="q1">Query 1</option>
-                        <option value="q2">Query 2</option>
-                        <option value="q3">Query 3</option>
-                        <option value="q4">Query 4</option>
-                        </select>
-                    </div>
+                        <div className={styles.rowSec10}>
+                            <input type="text" placeholder="Describe Query" />
+                            <select>
+                            <option value="">Query Related</option>
+                            <option value="q1">Query 1</option>
+                            <option value="q2">Query 2</option>
+                            <option value="q3">Query 3</option>
+                            <option value="q4">Query 4</option>
+                            </select>
+                        </div>
 
-                    <div className={styles.rowFullSec10}>
-                        <textarea placeholder="Message" rows="3"></textarea>
-                    </div>
+                        <div className={styles.rowFullSec10}>
+                            <textarea placeholder="Message" rows="3"></textarea>
+                        </div>
 
-                    <button type="submit" className={styles.buttonSec10}>
-                        Submit
-                    </button>
+                        <button type="submit" className={styles.buttonSec10}>
+                            Submit
+                        </button>
                     </form>
                 </div>
             </section>
@@ -282,3 +279,4 @@ const Acedmic = () => {
 };
 
 export default Acedmic;
+ 

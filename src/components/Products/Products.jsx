@@ -1,5 +1,5 @@
-import Card from "./Card";
-import { products } from "../data";
+import Card from "../Card/Card";
+import { products } from "../../data";
 import styles from "./Products.module.css";
 
 const Products = () => {

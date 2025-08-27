@@ -1,10 +1,9 @@
 .navbar {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 5.75rem; /* 92px → 92/16 = 5.75rem */
-  padding: 1rem 10%; /* instead of 220px */
+  padding: 1rem 10%;
   background-color: #264D4B;
   position: relative;
 }
@@ -13,21 +12,54 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  position: relative;
-  gap: 0.75rem; /* space between logo and text */
+  gap: 0.75rem;
 }
 
 .logoImage {
-  width: 2.5rem; /* ~40px */
+  width: 2.5rem;
   height: auto;
 }
 
 .logoText {
   color: white;
   font-weight: bold;
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
   line-height: 1.2;
   font-family: Inter, sans-serif;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+.icon1 {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Dropdown: mobile-first (inline flow) */
+.dropdown {
+  width: 100%;
+  position: relative;        
+  margin-top: 0.5rem;
+  background-color: #3b6e6c;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.dropdown p,
+.dropdown a {
+  margin: 0.25rem 0;
+  cursor: pointer;
+  display: block;
+  transition: color 0.2s ease-in-out;
+}
+.dropdown p:hover,
+.dropdown a:hover {
+  color: #d1d5db;
 }
 
 /* Desktop Menu */
@@ -39,37 +71,65 @@
   .menu {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* space between items */
+    gap: 1.5rem;
     color: white;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.9rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menuItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    /* Ensure no unwanted line breaks */
+    white-space: nowrap;
+  }
+  .menuLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .menuItem:hover {
+    color: #d1d5db;
+  }
+
+  .dropdown {
+    width: 16rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #3b6e6c;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 0.875rem;
   }
 }
 
-.menuItem {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-
-.menuItem:hover {
-  color: #d1d5db;
-}
-
+/* CTA Button (Desktop only) */
 .ctaButton {
   background-color: #6A9D9A;
   color: white;
-  padding: 0.75rem 1.5rem; /* responsive padding */
+  padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: none;
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   transition: background-color 0.2s ease-in-out;
+  border: none;
 }
-
 .ctaButton:hover {
   background-color: #4a7c76;
 }
@@ -86,7 +146,6 @@
   color: white;
   padding: 0.5rem;
 }
-
 @media (min-width: 1030px) {
   .mobileButton {
     display: none;
@@ -115,14 +174,20 @@
 .mobileMenuItem {
   color: white;
   display: flex;
+  flex-direction: column;
+  transition: color 0.2s ease-in-out;
+}
+.mobileMenuItem:hover {
+  color: #d1d5db;
+}
+
+/* Mobile header (label + arrow) */
+.mobileMenuHeader {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-
-.mobileMenuItem:hover {
-  color: #d1d5db;
+  gap: 0.35rem;
 }
 
 .mobileCta {
@@ -143,8 +208,8 @@
   justify-content: center;
   gap: 0.625rem;
   transition: background-color 0.2s ease-in-out;
+  border: none;
 }
-
 .mobileCtaButton:hover {
   background-color: #4a7c76;
 }

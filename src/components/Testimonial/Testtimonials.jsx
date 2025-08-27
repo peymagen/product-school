@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "./card2.jsx";
-import { testimonials } from "./data2.js";
+// import Card from "./card2.jsx";
+import Card from "../Card2/card2.jsx";
+import { testimonials } from "../data2.js";
 import styles from "./Testimonial.module.css";
 
 const App = () => {

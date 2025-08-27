@@ -13,6 +13,7 @@ const plans = [
     ],
     buttonText: "Get Started",
     highlight: false,
+    
   },
   {
     title: "Personal",

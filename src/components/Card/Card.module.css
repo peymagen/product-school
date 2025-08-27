@@ -1,0 +1,120 @@
+.card {
+  flex: 1 1 calc(33.333% - 1rem); /* 3 per row on large screens */
+  height: auto;
+  gap: 1.5rem;
+  border-radius: 0.625rem;
+  padding: 2.5rem 2.75rem;
+  box-sizing: border-box;
+  min-width: 280px; /* prevent cards from shrinking too small */
+}
+
+.darkCard {
+  background-color: #264d4b;
+}
+
+.lightCard {
+  border: 0.063rem solid #ffe492;
+}
+
+.title {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.darkTitle {
+  color: #ffe492;
+}
+
+.lightTitle {
+  color: black;
+}
+
+.features {
+  margin-top: 1.75rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1.2rem;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.featureText {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.darkIcon {
+  color: #ffe492;
+}
+
+.lightIcon {
+  color: black;
+}
+
+.darkText {
+  color: white;
+}
+
+.lightText {
+  color: black;
+}
+
+/* ===== Responsive Breakpoints ===== */
+
+/* Tablet (2 cards per row) */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(50% - 1rem); /* 2 per row */
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .icon {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .featureText {
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+  }
+}
+
+/* Mobile (1 card per row) */
+@media (max-width: 640px) {
+  .card {
+    flex: 1 1 100%; /* full width */
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .featureText {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+}

@@ -27,7 +27,8 @@ const Footer = () => {
             <span className={styles.logoText}>Acadex</span>
           </div>
 
-          {/* Links */}
+         <div className={styles.link}>
+           {/* Links */}
           <div className={styles.links}>
             <p className={styles.heading}>Product</p>
             <a href="/">Overview</a>
@@ -57,9 +58,10 @@ const Footer = () => {
             </p>
             <button className={styles.demoButton}>
               <span>Book Demo</span>
-              <FaArrowRight />
+              <FaArrowRight/>
             </button>
           </div>
+         </div>
         </div>
 
         {/* Bottom Section */}
