@@ -1,9 +1,9 @@
 
-import Quote from '../assets/Quote.png'
-import Group1 from '../assets/Group1.png';
-import Avatar from '../assets/Avater.png';
-import Avatar1 from '../assets/Avater1.png';
-import Avatar2 from '../assets/Avater2.png';
+import Quote from '../components/assets/Quote.png'
+import Group1 from '../components/assets/Group1.png';
+import Avatar from '../components/assets/Avater.png';
+import Avatar1 from '../components/assets/Avater1.png';
+import Avatar2 from '../components/assets/Avater2.png';
 
 export const testimonials = [
   {
